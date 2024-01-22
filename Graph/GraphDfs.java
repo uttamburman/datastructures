@@ -30,7 +30,10 @@ public class GraphDfs{
 		adj.get(6).add(1);
 		adj.get(6).add(7);
 		adj.get(6).add(8);
-		dfs(adj, N);
+		List<Integer> nodes = dfs(adj, N);
+		for(Integer it: nodes){
+			System.out.print(it + " ");
+		}
 	}
 
 	public static List<Integer> dfs(ArrayList<ArrayList<Integer>> adj ,  int N){

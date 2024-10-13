@@ -4,6 +4,7 @@ public class SortedArrayMinimumAbsoluteDifferenceTarget{
 		int[] arr2 = {10, 20, 30, 40};
 		int x=32;
 
+		//arr1[i] + arr2[j] – x
 		findMinimumDifference(arr1, arr2, x);
 	}
 
@@ -14,7 +15,10 @@ public class SortedArrayMinimumAbsoluteDifferenceTarget{
 		int n= arr1.length;
 
 		for(int i=0;i<n;i++){
-			int diff= arr[1]
+			int diff= Math.abs(arr[i]-x);
+			int upperBoundInd= Arrays.binarySearch(arr[j], diff);
+
+			
 		}
 	}
 
